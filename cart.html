@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product and Cart</title>
+  <link rel="stylesheet" href="css/style1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="js/cart.js"></script>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="nav-extended">
+      <div class="nav-wrapper valign-wrapper">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Go Back"    
+        class="btn"  
+        onclick="location.href='index.html';" style="float: left;">&nbsp;
+        <a href="/" class="brand-logo center">Meals</a>
+      </div>
+      <div class="nav-content hide-on-med-and-up">
+        <ul class="tabs">
+          <li class="tab"><a href="#products" class="active">Prodcts</a></li>
+          <li class="tab"><a href="#cart">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <main>
+    <div id="products" class="products s12 m6">
+      <div class="container">
+        <h2>Products</h2>
+        <div class="row center-align">
+          <p>All the good stuff here.</p>
+        </div>
+        <ul class="collapsible" id="product-list" data-collapsible="accordion">
+        </ul>
+      </div>
+    </div>
+    <div id="cart" class="cart s12 m6">
+      <div class="container">
+        <h2>Cart</h2>
+        <div class="card-panel shopping-cart">
+          All items added to the shopping cart will appear here.
+          <div id="cart-items" class="collection">
+          </div>
+          <div id="checkout">
+            <h3>Delivery</h3>
+            <div class="card left-align">
+              <div class="card-content">
+                <p>
+                  Please select a delivery method before proceeding to the
+                  checkout.
+                </p>
+              </div>
+              <div class="card-action center-align">
+                <div class="btn" onclick="location.href='checkout.html';">Checkout</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer footer-copyright"></footer>
+</body>
+
+</html>
